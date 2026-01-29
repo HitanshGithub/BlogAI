@@ -1,0 +1,18 @@
+{
+    "name": "blog-platform",
+    "version": "1.0.0",
+    "description": "Full-stack blog platform with AI summarization",
+    "scripts": {
+        "dev": "vercel dev",
+        "build": "cd frontend && npm run build"
+    },
+    "dependencies": {
+        "@google/generative-ai": "^0.21.0",
+        "bcryptjs": "^2.4.3",
+        "jsonwebtoken": "^9.0.2",
+        "mongoose": "^8.9.5"
+    },
+    "engines": {
+        "node": ">=18"
+    }
+}
