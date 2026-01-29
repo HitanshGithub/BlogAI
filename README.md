@@ -1,8 +1,8 @@
-# 📝 BlogAI - Full-Stack Blog Platform with AI Summarization
+#  BlogAI - Full-Stack Blog Platform with AI Summarization
 
 A modern full-stack blog platform built with React, Node.js, Express.js, and MongoDB, featuring AI-powered blog summarization using Google Gemini API.
 
-## ✨ Features
+##  Features
 
 - **User Authentication** - JWT-based secure login and registration
 - **Blog CRUD** - Create, read, update, and delete blog posts
@@ -12,7 +12,7 @@ A modern full-stack blog platform built with React, Node.js, Express.js, and Mon
 - **Search & Filter** - Find blogs by keywords or tags
 - **Pagination** - Efficient blog listing
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 ### Frontend
 - React 18 + Vite
@@ -27,7 +27,7 @@ A modern full-stack blog platform built with React, Node.js, Express.js, and Mon
 - bcryptjs for password hashing
 - Google Generative AI SDK
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 BLOG_PLATFORM/
@@ -51,7 +51,7 @@ BLOG_PLATFORM/
 └── README.md
 ```
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Node.js 18+
@@ -93,7 +93,7 @@ npm run dev
 - Frontend: http://localhost:5173
 - Backend API: http://localhost:5000
 
-## 📡 API Endpoints
+##  API Endpoints
 
 ### Authentication
 | Method | Endpoint | Description |
@@ -117,7 +117,7 @@ npm run dev
 |--------|----------|-------------|
 | POST | `/api/ai/summarize` | Generate AI summary (auth) |
 
-## 🔐 Environment Variables
+##  Environment Variables
 
 Create a `.env` file in the backend folder:
 
@@ -128,7 +128,7 @@ JWT_SECRET=your-super-secret-key
 GEMINI_API_KEY=your-gemini-api-key
 ```
 
-## 📸 Screenshots
+##  Screenshots
 
 The application features:
 - Modern dark theme with gradient accents
@@ -137,6 +137,6 @@ The application features:
 - AI-powered summary generation
 - Responsive design for all devices
 
-## 📄 License
+##  License
 
 MIT
