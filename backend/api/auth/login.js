@@ -1,15 +1,15 @@
 const jwt = require('jsonwebtoken');
 const connectDB = require('../_lib/db');
 const User = require('../_models/User');
+const { handleCors, setCorsHeaders } = require('../_lib/cors');
 
 const generateToken = (id) => {
     return jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: '30d' });
 };
 
 module.exports = async (req, res) => {
-    if (req.method === 'OPTIONS') {
-        return res.status(200).end();
-    }
+    setCorsHeaders(res);
+    if (handleCors(req, res)) return;
 
     if (req.method !== 'POST') {
         return res.status(405).json({ message: 'Method not allowed' });

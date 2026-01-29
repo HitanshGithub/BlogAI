@@ -1,10 +1,10 @@
 const connectDB = require('../_lib/db');
 const Blog = require('../_models/Blog');
+const { handleCors, setCorsHeaders } = require('../_lib/cors');
 
 module.exports = async (req, res) => {
-    if (req.method === 'OPTIONS') {
-        return res.status(200).end();
-    }
+    setCorsHeaders(res);
+    if (handleCors(req, res)) return;
 
     if (req.method !== 'GET') {
         return res.status(405).json({ message: 'Method not allowed' });
