@@ -1,0 +1,285 @@
+.create-blog-page {
+    min-height: calc(100vh - 80px);
+    padding: 2rem;
+    background: linear-gradient(135deg, #fff5ef 0%, #ffffff 100%);
+}
+
+.create-blog-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.page-header h1 {
+    color: #1a1a2e;
+    font-size: 2.25rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.page-header p {
+    color: #7a7a9a;
+    font-size: 1rem;
+}
+
+.form-error {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(239, 68, 68, 0.05));
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    color: #ef4444;
+    padding: 1rem 1.25rem;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+}
+
+.blog-form {
+    background: #ffffff;
+    border: 1px solid rgba(255, 107, 53, 0.1);
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    box-shadow: 0 10px 40px rgba(255, 107, 53, 0.08);
+}
+
+.blog-form .form-group {
+    margin-bottom: 1.75rem;
+}
+
+.blog-form .form-group label {
+    display: block;
+    color: #1a1a2e;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+}
+
+.blog-form .form-group input,
+.blog-form .form-group textarea {
+    width: 100%;
+    background: #fef9f5;
+    border: 2px solid rgba(255, 107, 53, 0.15);
+    padding: 1rem 1.25rem;
+    border-radius: 1rem;
+    color: #1a1a2e;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    resize: vertical;
+}
+
+.blog-form .form-group input:focus,
+.blog-form .form-group textarea:focus {
+    outline: none;
+    border-color: #ff6b35;
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(255, 107, 53, 0.12);
+}
+
+.blog-form .form-group input::placeholder,
+.blog-form .form-group textarea::placeholder {
+    color: #9a9aba;
+}
+
+.blog-form textarea {
+    min-height: 280px;
+    line-height: 1.8;
+}
+
+/* Generated Tags Section */
+.generated-tags-section {
+    margin-bottom: 1.75rem;
+}
+
+.generated-tags-section label {
+    display: block;
+    color: #1a1a2e;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.generated-tag {
+    background: linear-gradient(135deg, rgba(255, 107, 53, 0.1), rgba(255, 159, 28, 0.1));
+    color: #ff6b35;
+    padding: 0.4rem 0.75rem;
+    border-radius: 2rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid rgba(255, 107, 53, 0.2);
+    transition: all 0.3s ease;
+}
+
+.generated-tag:hover {
+    background: linear-gradient(135deg, #ff6b35, #ff9f1c);
+    color: white;
+}
+
+.remove-tag {
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    opacity: 0.7;
+}
+
+.remove-tag:hover {
+    opacity: 1;
+}
+
+/* My Notes Section */
+.notes-section {
+    background: linear-gradient(145deg, rgba(255, 107, 53, 0.05), rgba(255, 159, 28, 0.03));
+    border: 2px solid rgba(255, 107, 53, 0.15);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 1.75rem;
+}
+
+.notes-header {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.notes-icon {
+    font-size: 1.25rem;
+}
+
+.notes-header h3 {
+    color: #1a1a2e;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+.notes-textarea {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid rgba(255, 107, 53, 0.2);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    color: #1a1a2e;
+    font-size: 0.95rem;
+    font-family: inherit;
+    line-height: 1.7;
+    resize: vertical;
+    min-height: 100px;
+    transition: all 0.3s ease;
+}
+
+.notes-textarea:focus {
+    outline: none;
+    border-color: #ff6b35;
+    box-shadow: 0 2px 10px rgba(255, 107, 53, 0.1);
+}
+
+.notes-textarea::placeholder {
+    color: #9a9aba;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 107, 53, 0.1);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #ff6b35, #ff9f1c);
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 3rem;
+    font-size: 1.05rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 4px 20px rgba(255, 107, 53, 0.3);
+}
+
+.btn-primary:hover:not(:disabled) {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 30px rgba(255, 107, 53, 0.4);
+}
+
+.btn-primary:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.btn-secondary {
+    background: #ffffff;
+    color: #4a4a6a;
+    border: 2px solid rgba(255, 107, 53, 0.2);
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 107, 53, 0.08);
+    border-color: rgba(255, 107, 53, 0.4);
+    color: #ff6b35;
+}
+
+.btn-spinner {
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .create-blog-page {
+        padding: 1rem;
+    }
+
+    .blog-form {
+        padding: 1.5rem;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .form-actions button {
+        width: 100%;
+        justify-content: center;
+    }
+}

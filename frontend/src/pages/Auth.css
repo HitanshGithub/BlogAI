@@ -1,0 +1,218 @@
+.auth-page {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: linear-gradient(135deg, #fff5ef 0%, #ffffff 50%, #fef9f5 100%);
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 440px;
+    background: #ffffff;
+    border: 1px solid rgba(255, 107, 53, 0.1);
+    border-radius: 2rem;
+    padding: 3rem;
+    box-shadow: 0 20px 60px rgba(255, 107, 53, 0.12);
+    position: relative;
+    overflow: hidden;
+}
+
+.auth-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #ff6b35, #ff9f1c, #ffbe0b);
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.auth-icon {
+    font-size: 4rem;
+    display: block;
+    margin-bottom: 1rem;
+    animation: wave 2s ease infinite;
+}
+
+@keyframes wave {
+
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(20deg);
+    }
+
+    75% {
+        transform: rotate(-20deg);
+    }
+}
+
+.auth-header h1 {
+    color: #1a1a2e;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.auth-header p {
+    color: #7a7a9a;
+    font-size: 0.95rem;
+}
+
+.auth-error {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(239, 68, 68, 0.05));
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    color: #ef4444;
+    padding: 1rem 1.25rem;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    animation: shake 0.5s ease;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    75% {
+        transform: translateX(5px);
+    }
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    color: #1a1a2e;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.form-group input {
+    background: #fef9f5;
+    border: 2px solid rgba(255, 107, 53, 0.15);
+    padding: 1rem 1.25rem;
+    border-radius: 1rem;
+    color: #1a1a2e;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #ff6b35;
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(255, 107, 53, 0.15);
+    transform: scale(1.01);
+}
+
+.form-group input::placeholder {
+    color: #9a9aba;
+}
+
+.auth-btn {
+    background: linear-gradient(135deg, #ff6b35, #ff9f1c);
+    color: white;
+    border: none;
+    padding: 1.1rem;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    box-shadow: 0 4px 20px rgba(255, 107, 53, 0.3);
+}
+
+.auth-btn:hover:not(:disabled) {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 30px rgba(255, 107, 53, 0.4);
+}
+
+.auth-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.btn-spinner {
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 2rem;
+    color: #7a7a9a;
+    font-size: 0.95rem;
+}
+
+.auth-link {
+    color: #ff6b35;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.auth-link:hover {
+    color: #e55a2b;
+}
+
+.auth-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ff6b35;
+    transition: width 0.3s ease;
+}
+
+.auth-link:hover::after {
+    width: 100%;
+}
