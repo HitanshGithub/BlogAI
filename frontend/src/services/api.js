@@ -1,8 +1,7 @@
 import axios from 'axios';
 
-// For production: Replace with your deployed backend URL
-// Example: 'https://your-backend-project.vercel.app/api'
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+// Production backend URL
+const API_URL = import.meta.env.VITE_API_URL || 'https://blog-ai-bvog.vercel.app/api';
 
 // Create axios instance
 const api = axios.create({
